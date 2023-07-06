@@ -8,6 +8,6 @@
 
 Ссылка на проект
 
-IP 158.160.31.232
+IP 51.250.111.202
 
-Backend https://batman.nomoreparties.sbs/api/
+Backend https://batman.nomoreparties.sbs/
