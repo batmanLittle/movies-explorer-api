@@ -87,8 +87,7 @@ const updateUser = (req, res, next) => {
     .catch((err) => {
       if (err.name === "ValidationError") {
         return next(new BadRequest("Переданы некорректные данные"));
-      }
-      if (err.name === "MongoServerError") {
+      } else if (err.code === 11000) {
         return next(new Conflict("Такой пользаватель уже существует"));
       }
       return next(err);
